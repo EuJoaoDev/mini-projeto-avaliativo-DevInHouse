@@ -1,0 +1,90 @@
+/* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F0F4F5;
+}
+
+/* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F0F4F5;
+}
+
+/* CSS TABELA DINÂMICA */
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+    background-color: #f0f0f0; /* Define a cor de fundo da página */
+}
+
+.product-list {
+    list-style-type: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    display: flex; /* Define um layout flexível para a lista */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+.product-item {
+    background-color: #d3d3d3; /* Cor de fundo dos itens da lista */
+    width: 200px; /* Largura de cada item da lista */
+    margin: 10px; /* Espaço ao redor de cada item */
+    border-radius: 8px; /* Arredonda os cantos dos itens */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do item */
+    position: relative; /* Define o contexto de posicionamento para elementos filhos */
+}
+
+.product-image {
+    background-color: #e0e0e0; /* Cor de fundo da área da imagem */
+    height: 150px; /* Altura da área da imagem */
+    display: flex; /* Define um layout flexível para a área da imagem */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    position: relative; /* Define o contexto de posicionamento para elementos filhos */
+}
+
+.product-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da área */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da área */
+    display: block; /* Remove o espaço em branco ao redor da imagem */
+}
+
+.product-info {
+    padding: 10px; /* Espaçamento interno ao redor das informações do produto */
+    text-align: center; /* Centraliza o texto dentro do bloco de informações */
+}
+
+.product-name {
+    font-size: 16px; /* Tamanho da fonte para o nome do produto */
+    margin: 5px 0; /* Espaço ao redor do nome do produto */
+}
+
+.product-lab {
+    font-size: 14px; /* Tamanho da fonte para o nome do laboratório */
+    color: #777; /* Cor do texto do laboratório */
+    margin: 5px 0; /* Espaço ao redor do nome do laboratório */
+}
+
+.product-price {
+    font-size: 18px; /* Tamanho da fonte para o preço */
+    font-weight: bold; /* Define o texto do preço como negrito */
+    margin: 10px 0; /* Espaço ao redor do preço */
+}

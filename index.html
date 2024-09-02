@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - PharmaTech</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
 <body>
-    
-    <script src="js/script.js"></script>
+    <header>
+        <h1>Formulário de cadastro de medicamentos</h1>
+        <form id="cadastroMedicamento" onsubmit="adicionarMedicamento(event)">
+
+            <label for="photoUrl">Foto (URL):</label>
+            <input type="url" id="photoUrl" name="photoUrl" style="width: 150px;">
+
+            <label for="nomeMedicamento">Nome do Medicamento:</label>
+            <input type="text" id="nomeMedicamento" name="nome" required>
+
+            <label for="laboratorio">Nome do Laboratório:</label>
+            <input type="text" id="laboratorio" name="laboratorio" required>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" step="0.01" required>
+
+            <button type="submit">Cadastrar Medicamento</button>
+
+        </form>
+    </header>
+
+    <ul id="product-list" class="product-list">
+        <!-- O conteúdo será gerado dinamicamente por JavaScript -->
+    </ul>
+<script src="js/script.js"></script>
 </body>
 </html>
