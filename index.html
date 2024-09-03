@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div>
-                <img src="pharma-tech.jpg" alt="logo">
+                <img class="img" src="pharma-tech.jpg" alt="logo">
             </div>
         </div>
     </header>
-    <header>
+
+    <main class="main">
         <h1>Formulário de cadastro de medicamentos</h1>
-        <form id="cadastroMedicamento" onsubmit="adicionarMedicamento(event)">
+        <form id="cadastroMedicamento" onSubmit="adicionarMedicamento(event)">
 
             <label for="photoUrl">Foto (URL):</label>
             <input type="url" id="photoUrl" name="photoUrl" style="width: 150px;">
@@ -35,7 +37,7 @@
             <button type="submit">Cadastrar Medicamento</button>
 
         </form>
-    </header>
+    </main>
 
     <ul id="product-list" class="product-list">
         <!-- O conteúdo será gerado dinamicamente por JavaScript -->

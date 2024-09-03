@@ -16,17 +16,12 @@ body {
 
 /* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
+.container{
+    max-width: 1200px;
+    padding: 0.25rem 7%;
 }
-
-body {
-    background-color: #F0F4F5;
+.img{
+    width: 220px;
 }
 
 /* CSS TABELA DINÂMICA */
