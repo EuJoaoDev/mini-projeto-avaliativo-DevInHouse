@@ -16,10 +16,11 @@ body {
 
 /* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
 header{
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .container{
+
     max-width: 1200px;
     padding: 0.25rem 7%;
 }
@@ -28,6 +29,11 @@ header{
 }
 
 /* CSS TABELA DINÂMICA */
+
+.h2Lista{
+    margin-top: 45px;
+    margin-left: 25px;
+}
 
 body {
     font-family: Arial, sans-serif;
