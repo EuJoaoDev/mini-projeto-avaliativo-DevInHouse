@@ -48,6 +48,16 @@ header img {
   object-fit: cover;
   margin-right: 10px;
 }
+.company-name {
+  font-size: 20px;
+  font-weight: bold; /* Makes "Pharma" bold */
+  color: #fff; /* White color for the text */
+}
+
+.tech-name {
+  font-weight: 300; /* Thin font weight for "Tech" */
+  font-size: inherit; /* Inherits the font size from the parent */
+}
 
 .company-name {
   font-size: 18px;
