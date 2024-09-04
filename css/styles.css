@@ -1,127 +1,271 @@
-/* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
+/* Vermelho claro #f3bfc1 Azul claro #9ed8eb Brancoback */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
+.img {
+  width: 220px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: #F0F4F5;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Vermelho claro #ffb2ad Azul claro #9ed8eb Brancoback */
-header{
-    background-color: #ffffff;
+/* Header Styling */
+/* Header Styling */
+header {
+  background: #f5e3e3;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the start */
 }
 
-.container{
-
-    max-width: 1200px;
-    padding: 0.25rem 7%;
+header .logo-container {
+  display: flex;
+  align-items: center;
 }
-.img{
-    width: 220px;
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef526a;
+}
+
+/* Main Content Styling */
+.main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 220px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #a6d3e3;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #f3bfc1;
+  outline: none;
+}
+
+/* Button Styling */
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #f3bfc1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.submit-btn:hover {
+  background-color: #f3bfc1;
+}
+
+/* Product List Styling */
+.product-list {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.product-list li {
+  background-color: #a6d3e3;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    max-width: 120px;
+  }
+
+  .main {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
 }
 
 /* CSS TABELA DINÂMICA */
-
-.h2Lista{
-    margin-top: 45px;
-    margin-left: 25px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    /* Define a fonte padrão para o texto */
-    background-color: #f0f0f0;
-    /* Define a cor de fundo da página */
-}
-
+/* Lista de Produtos */
 .product-list {
-    list-style-type: none;
-    /* Remove as bolinhas da lista */
-    padding: 0;
-    /* Remove o padding padrão da lista */
-    display: flex;
-    /* Define um layout flexível para a lista */
-    flex-wrap: wrap;
-    /* Permite que os itens quebrem linha se necessário */
-    justify-content: center;
-    /* Centraliza os itens da lista horizontalmente */
+  list-style-type: none;
+  /* Remove as bolinhas da lista */
+  padding: 0;
+  /* Remove o padding padrão da lista */
+  display: flex;
+  /* Define um layout flexível para a lista */
+  flex-wrap: wrap;
+  /* Permite que os itens quebrem linha se necessário */
+  justify-content: center;
+  /* Centraliza os itens da lista horizontalmente */
 }
 
 .product-item {
-    background-color: #d3d3d3;
-    /* Cor de fundo dos itens da lista */
-    width: 200px;
-    /* Largura de cada item da lista */
-    margin: 10px;
-    /* Espaço ao redor de cada item */
-    border-radius: 8px;
-    /* Arredonda os cantos dos itens */
-    overflow: hidden;
-    /* Garante que o conteúdo não ultrapasse os limites do item */
-    position: relative;
-    /* Define o contexto de posicionamento para elementos filhos */
+  background-color: #a6d3e3;
+  /* Cor de fundo dos itens da lista */
+  width: 220px;
+  /* Largura de cada item da lista */
+  margin: 10px;
+  /* Espaço ao redor de cada item */
+  border-radius: 8px;
+  /* Arredonda os cantos dos itens */
+  overflow: hidden;
+  /* Garante que o conteúdo não ultrapasse os limites do item */
+  position: relative;
+  /* Define o contexto de posicionamento para elementos filhos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adiciona uma sombra sutil ao redor dos itens */
 }
 
 .product-image {
-    background-color: #e0e0e0;
-    /* Cor de fundo da área da imagem */
-    height: 150px;
-    /* Altura da área da imagem */
-    display: flex;
-    /* Define um layout flexível para a área da imagem */
-    align-items: center;
-    /* Centraliza a imagem verticalmente */
-    justify-content: center;
-    /* Centraliza a imagem horizontalmente */
-    position: relative;
-    /* Define o contexto de posicionamento para elementos filhos */
+  background-color: #e0e0e0;
+  /* Cor de fundo da área da imagem */
+  height: 150px;
+  /* Altura da área da imagem */
+  display: flex;
+  /* Define um layout flexível para a área da imagem */
+  align-items: center;
+  /* Centraliza a imagem verticalmente */
+  justify-content: center;
+  /* Centraliza a imagem horizontalmente */
+  position: relative;
+  /* Define o contexto de posicionamento para elementos filhos */
+  border-bottom: 2px solid #f3bfc1;
+  /* Linha de divisão entre a imagem e as informações do produto */
 }
 
 .product-image img {
-    max-width: 100%;
-    /* Garante que a imagem não ultrapasse a largura da área */
-    max-height: 100%;
-    /* Garante que a imagem não ultrapasse a altura da área */
-    display: block;
-    /* Remove o espaço em branco ao redor da imagem */
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse a largura da área */
+  max-height: 100%;
+  /* Garante que a imagem não ultrapasse a altura da área */
+  display: block;
+  /* Remove o espaço em branco ao redor da imagem */
 }
 
 .product-info {
-    padding: 10px;
-    /* Espaçamento interno ao redor das informações do produto */
-    text-align: center;
-    /* Centraliza o texto dentro do bloco de informações */
+  padding: 15px;
+  /* Espaçamento interno ao redor das informações do produto */
+  text-align: center;
+  /* Centraliza o texto dentro do bloco de informações */
+  background-color: #fff;
+  /* Cor de fundo do bloco de informações */
 }
 
 .product-name {
-    font-size: 16px;
-    /* Tamanho da fonte para o nome do produto */
-    margin: 5px 0;
-    /* Espaço ao redor do nome do produto */
+  font-size: 16px;
+  /* Tamanho da fonte para o nome do produto */
+  margin: 5px 0;
+  /* Espaço ao redor do nome do produto */
+  color: #333;
+  /* Cor do texto do nome do produto */
 }
 
 .product-lab {
-    font-size: 14px;
-    /* Tamanho da fonte para o nome do laboratório */
-    color: #777;
-    /* Cor do texto do laboratório */
-    margin: 5px 0;
-    /* Espaço ao redor do nome do laboratório */
+  font-size: 14px;
+  /* Tamanho da fonte para o nome do laboratório */
+  color: #777;
+  /* Cor do texto do laboratório */
+  margin: 5px 0;
+  /* Espaço ao redor do nome do laboratório */
 }
 
 .product-price {
-    font-size: 18px;
-    /* Tamanho da fonte para o preço */
-    font-weight: bold;
-    /* Define o texto do preço como negrito */
+  font-size: 18px;
+  /* Tamanho da fonte para o preço */
+  font-weight: bold;
+  /* Define o texto do preço como negrito */
+  margin: 10px 0;
+  /* Espaço ao redor do preço */
+  color: #e56b7d;
+  /* Cor do texto do preço */
+}
+
+/* Responsividade para os cards */
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%;
+    /* Os itens ocupam 100% da largura em telas menores */
     margin: 10px 0;
-    /* Espaço ao redor do preço */
+  }
 }

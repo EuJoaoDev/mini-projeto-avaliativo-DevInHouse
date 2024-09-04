@@ -1,54 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de produtos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="/assets/favicon-32x32.png" type="image/x-icon">
-
-</head>
-
-<body>
-
+  <body>
     <header>
-        <div class="container">
-            <div>
-                <img class="img" src="/assets/pharma-tech-removebg-preview.png"" alt=" logo">
-            </div>
+      <div class="container">
+        <div class="logo-container">
+          <img src="pharma-tech.jpg" alt="Logo" />
+          <span class="company-name">Pharma Tech</span>
         </div>
+      </div>
     </header>
-
     <main class="main">
-        <h1>Formulário de cadastro de medicamentos</h1>
-        <form id="cadastroMedicamento" onSubmit="adicionarMedicamento(event)">
+      <h1>Formulário de Cadastro de Medicamentos</h1>
+      <form
+        id="cadastroMedicamento"
+        onSubmit="adicionarMedicamento(event)"
+        class="form-container"
+      >
+        <div class="form-group">
+          <label for="photoUrl">URL da Imagem</label>
+          <input
+            type="text"
+            id="photoUrl"
+            name="photoUrl"
+            placeholder="Informe o URL da imagem"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nomeMedicamento">Nome</label>
+          <input
+            type="text"
+            id="nomeMedicamento"
+            name="nome"
+            placeholder="Informe o nome do medicamento"
+            required
+          />
+        </div>
 
-            <label for="photoUrl">Foto (URL):</label>
-            <input type="url" id="photoUrl" name="photoUrl" style="width: 150px;">
+        <div class="form-group">
+          <label for="laboratorio">Laboratório</label>
+          <input
+            type="text"
+            id="laboratorio"
+            name="laboratorio"
+            placeholder="Informe o nome do laboratório"
+            required
+          />
+        </div>
 
-            <label for="nomeMedicamento">Nome do Medicamento:</label>
-            <input type="text" id="nomeMedicamento" name="nome" required>
+        <div class="form-group">
+          <label for="preco">Preço</label>
+          <input
+            type="number"
+            id="preco"
+            name="preco"
+            placeholder="Informe o preço"
+            step="0.01"
+            required
+          />
+        </div>
 
-            <label for="laboratorio">Nome do Laboratório:</label>
-            <input type="text" id="laboratorio" name="laboratorio" required>
-
-            <label for="preco">Preço:</label>
-            <input type="number" id="preco" name="preco" step="0.01" required>
-
-            <button type="submit">Cadastrar Medicamento</button>
-
-        </form>
+        <button type="submit" class="submit-btn">Cadastrar novo</button>
+      </form>
     </main>
 
-    <div class="h2Lista">
-        <h2>Todos os medicamentos</h2>
-    </div>
-
     <ul id="product-list" class="product-list">
-        <!-- O conteúdo será gerado dinamicamente por JavaScript -->
+      <!-- O conteúdo será gerado dinamicamente por JavaScript -->
     </ul>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
