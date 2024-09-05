@@ -1,9 +1,8 @@
-Este projeto consiste na criação de uma página de vitrine de medicamentos onde teremos um formulário para cadastrar um novo medicamento e logo abaixo a lista com todos os medicamentos que foram cadastrados.
+# Vitrine de Medicamentos
 
-O mini projeto foi desenvolvido pelos participantes abaixo;
+Este projeto consiste na criação de uma página de **vitrine de medicamentos**, onde temos um formulário para cadastrar um novo medicamento, e logo abaixo, uma lista com todos os medicamentos que foram cadastrados.
 
-João Victor
-Mônica Couto
-Natalia Clementino
-Tiago Couto
-Gabriel Ricardo
+## Funcionalidades
+
+- Formulário para cadastrar novos medicamentos, incluindo informações relevantes como nome,fabricante, etc.
+- Listagem dinâmica de todos os medicamentos cadastrados.
