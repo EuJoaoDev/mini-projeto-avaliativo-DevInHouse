@@ -6,3 +6,5 @@ Este projeto consiste na criação de uma página de **vitrine de medicamentos**
 
 - Formulário para cadastrar novos medicamentos, incluindo informações relevantes como nome,fabricante, etc.
 - Listagem dinâmica de todos os medicamentos cadastrados.
+
+Funcionamento em: https://blogpeteujoaodev.netlify.app/
